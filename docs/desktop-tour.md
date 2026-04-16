@@ -78,7 +78,7 @@ Every chat in a Project already knows the context. You can open a new chat and j
 
 Setting up a Project from scratch is the hardest part. What goes into the instructions, what files belong in the knowledge base, how do you structure it so it still holds up three months in.
 
-The **project-setup** skill (shared during the Claude Cowork training session) runs you through a five-minute interview and produces a starter kit of five foundational files:
+The **project-setup** skill runs you through a five-minute interview and produces a starter kit of five foundational files:
 
 - **CLAUDE.md** → how Claude should work in this project
 - **INITIAL_CONTEXT.md** → day-one background, who this is for, what problem it solves
@@ -86,7 +86,11 @@ The **project-setup** skill (shared during the Claude Cowork training session) r
 - **SOUL.md** → the tone and personality you want Claude to use
 - **PROJECT_STATUS.md** → a living dashboard showing where the project is right now, plus a workspace map
 
-Paste the first two into Project instructions, upload the rest as Project knowledge, and your Project is structured from day one. You can get the skill from Yen once the Cowork training session has run.
+Paste the first two into Project instructions, upload the rest as Project knowledge, and your Project is structured from day one.
+
+[:octicons-download-24: Download project-setup.skill](assets/project-setup.skill){ .md-button .md-button--primary }
+
+Installation and live walkthrough are covered in the Claude Cowork training session.
 
 ## 5. File uploads
 

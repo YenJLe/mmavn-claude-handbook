@@ -49,7 +49,9 @@ All three are strong. They are not identical, and the differences matter for the
 !!! tip "Skip the blank page: use the project-setup skill"
     The hardest part of a new Project is the blank page: what do you put in Project instructions, what files belong in Project knowledge, and how do you structure them so future-you does not have to rewrite everything after the first week.
 
-    The **project-setup** skill (shared during the Claude Cowork training session) interviews you for about five minutes and generates a starter kit of five foundational files: **CLAUDE.md** (operating rules), **INITIAL_CONTEXT.md** (day-one background), **DIARY.md** (decision log), **SOUL.md** (tone and personality), and **PROJECT_STATUS.md** (a living dashboard with a workspace map). Drop these straight into Project instructions and Project knowledge. Your first Project is structured from day one, not after three rewrites.
+    The **project-setup** skill interviews you for about five minutes and generates a starter kit of five foundational files: **CLAUDE.md** (operating rules), **INITIAL_CONTEXT.md** (day-one background), **DIARY.md** (decision log), **SOUL.md** (tone and personality), and **PROJECT_STATUS.md** (a living dashboard with a workspace map). Drop these straight into Project instructions and Project knowledge. Your first Project is structured from day one, not after three rewrites.
+
+    [:octicons-download-24: Download project-setup.skill](assets/project-setup.skill){ .md-button .md-button--primary }
 
 ### 2. File uploads
 
