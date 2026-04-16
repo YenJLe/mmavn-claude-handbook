@@ -7,7 +7,7 @@ hide:
 
 *The team's guide to using Claude for everyday work.*
 
-This site is the working knowledge base for Claude, the AI assistant we use across MMA Vietnam. It covers what Claude is, how to use it well, and how it fits into real MMA work. Expect it to grow. Every question that comes up in training or in chat lands here so the next person can find the answer.
+Think of Claude as a thinking partner. Bring it a half-formed idea, a messy draft, or a stack of notes, and brainstorm out loud. Ask it anything. Let it ask you back until the brief is sharp enough to answer. This site shows you how to get the most out of that partnership: what Claude is, where everything lives in the app, and the briefing habits that make the conversation actually useful.
 
 !!! tip "New to Claude?"
     Start with **Claude 101** to understand what Claude is and what it does. Then read the **Desktop App Tour** and **Prompting Basics**. Skim **Use Cases by Role** for examples relevant to your work.
