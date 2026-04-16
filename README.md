@@ -53,8 +53,6 @@ mmavn-claude-handbook/
     desktop-tour.md       # App walkthrough
     prompting.md          # Prompting basics
     use-cases.md          # Role-specific examples
-    faq.md                # Questions the team keeps asking
-    changelog.md          # What's new
     assets/               # Logos, favicons, screenshots
     stylesheets/
       extra.css           # MMA brand styling

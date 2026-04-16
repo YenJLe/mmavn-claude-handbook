@@ -97,7 +97,7 @@ The difference between a weak output and a strong one is almost always how much 
 - Do not paste client confidential material without checking with the project lead first.
 - Always review Claude's output before sending or publishing. You are accountable, not the tool.
 - Verify numbers, names, dates, and quotes against the source.
-- Flag anything Claude gets wrong so we can add it to the FAQ.
+- Flag anything Claude gets wrong so the team can learn from it.
 
 ---
 

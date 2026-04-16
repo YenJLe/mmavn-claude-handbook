@@ -48,22 +48,6 @@ This site is the working knowledge base for Claude, the AI assistant we use acro
 
     [:octicons-arrow-right-24: Read more](use-cases.md)
 
--   :material-help-circle-outline:{ .lg .middle } **FAQ**
-
-    ---
-
-    Answers to the questions the team keeps asking.
-
-    [:octicons-arrow-right-24: Read more](faq.md)
-
--   :material-history:{ .lg .middle } **Changelog**
-
-    ---
-
-    What is new in Claude, in MMA's use of it, and in this handbook.
-
-    [:octicons-arrow-right-24: Read more](changelog.md)
-
 </div>
 
 ---
