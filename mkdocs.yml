@@ -1,0 +1,73 @@
+site_name: MMA Claude Handbook
+site_description: The MMA team's guide to using Claude for everyday work.
+site_author: MMA Vietnam
+site_url: https://yenjle.github.io/mmavn-claude-handbook/
+repo_url: https://github.com/YenJLe/mmavn-claude-handbook
+repo_name: YenJLe/mmavn-claude-handbook
+copyright: Internal knowledge base. MMA Vietnam.
+
+docs_dir: docs
+
+theme:
+  name: material
+  # Drop an MMA logo PNG at docs/assets/mma-logo.png to activate.
+  # logo: assets/mma-logo.png
+  # favicon: assets/favicon.png
+  palette:
+    - scheme: default
+      primary: black
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: black
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.instant
+    - navigation.tracking
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.follow
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Getting Access: getting-access.md
+      - Claude 101: claude-101.md
+  - Core Knowledge:
+      - Desktop App Tour: desktop-tour.md
+      - Prompting Basics: prompting.md
+  - Working with Claude:
+      - Use Cases by Role: use-cases.md
+      - FAQ: faq.md
+  - Changelog: changelog.md
