@@ -46,12 +46,7 @@ All three are strong. They are not identical, and the differences matter for the
 
 > **Use case:** one Project per major workstream (Creative Summit, INNOVATE, SMARTIES, Think Tanks). Upload the brand deck, past copy, and sponsor list once. Future drafts take 30 seconds instead of 10 minutes of re-briefing. This is the single biggest productivity gain in the app, and the feature that separates people who use Claude casually from people who get real leverage out of it.
 
-!!! tip "Skip the blank page: use the project-setup skill"
-    The hardest part of a new Project is the blank page: what do you put in Project instructions, what files belong in Project knowledge, and how do you structure them so future-you does not have to rewrite everything after the first week.
-
-    The **project-setup** skill interviews you for about five minutes and generates a starter kit of five foundational files: **CLAUDE.md** (operating rules), **INITIAL_CONTEXT.md** (day-one background), **DIARY.md** (decision log), **SOUL.md** (tone and personality), and **PROJECT_STATUS.md** (a living dashboard with a workspace map). Drop these straight into Project instructions and Project knowledge. Your first Project is structured from day one, not after three rewrites.
-
-    [:octicons-download-24: Download project-setup.skill](assets/project-setup.skill){ .md-button .md-button--primary }
+[:octicons-arrow-right-24: How to set up a Project](desktop-tour.md#projects){ .md-button .md-button--primary }
 
 ### 2. File uploads
 
@@ -94,6 +89,22 @@ Claude remembers facts about you across conversations if you let it. It will sav
 ### 10. Claude Cowork (preview)
 
 The feature we will cover in the next training. Turns a local folder on your computer into a persistent AI workspace with its own instructions, decision log, and status tracker. This is how we run the MMA Vietnam project internally. More in the second session.
+
+## Markdown (.md) files: a quick primer { #markdown-files }
+
+You will run into `.md` files the moment you start setting up a Project or working in Claude Cowork. Worth knowing what they are.
+
+!!! info "What is a .md file?"
+    `.md` stands for **Markdown**: a plain-text format with light formatting (headings, bullets, bold, links). It reads cleanly as plain text and also renders beautifully when a tool understands it.
+
+    **How to view or edit one:**
+
+    - **Any text editor:** TextEdit on Mac, Notepad on Windows, or a free editor like VS Code or Obsidian for a nicer experience with live preview.
+    - **Inside Claude:** drag the file into a chat and Claude can read it, summarise it, or help you edit it.
+    - **In the Claude desktop app's Project view:** uploaded `.md` files show their rendered content directly.
+    - **On GitHub or any code host:** `.md` files render as formatted pages automatically.
+
+    You do not need to learn Markdown syntax to use these files. Open them, read the text, edit with confidence.
 
 ## The one rule that changes everything
 

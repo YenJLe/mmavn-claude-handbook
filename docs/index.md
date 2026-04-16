@@ -9,6 +9,11 @@ hide:
 
 Think of Claude as a thinking partner. Bring it a half-formed idea, a messy draft, or a stack of notes, and brainstorm out loud. Ask it anything. Let it ask you back until the brief is sharp enough to answer. This site shows you how to get the most out of that partnership: what Claude is, where everything lives in the app, and the briefing habits that make the conversation actually useful.
 
+!!! tip "Read this first if nothing else"
+    **Projects** are what turn Claude from a chat window into a real workspace. Teams that set up Projects well get hours back every week. Teams that do not set up Projects keep re-briefing Claude from scratch every time and wonder why it feels slow.
+
+    [:octicons-arrow-right-24: Jump to the Projects section](desktop-tour.md#projects){ .md-button .md-button--primary }
+
 !!! tip "New to Claude?"
     Start with **Claude 101** to understand what Claude is and what it does. Then read the **Desktop App Tour** and **Prompting Basics**. Skim **Use Cases by Role** for examples relevant to your work.
 

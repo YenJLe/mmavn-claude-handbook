@@ -33,7 +33,7 @@ Type your prompt. Press Enter to send, or Shift + Enter for a line break.
 
 A new chat has **no memory of other chats**. If you want Claude to know something from a previous conversation, you have to tell it or paste it in. This is why Projects exist (next section).
 
-## 4. Projects: the single biggest time-saver
+## 4. Projects: the single biggest time-saver { #projects }
 
 A **Project** is a persistent workspace with its own instructions and files. Every new chat inside a project inherits both. This means you set up the context once and never re-brief Claude again for that project.
 
@@ -86,7 +86,12 @@ The **project-setup** skill runs you through a five-minute interview and produce
 - **SOUL.md** → the tone and personality you want Claude to use
 - **PROJECT_STATUS.md** → a living dashboard showing where the project is right now, plus a workspace map
 
+*New to `.md` files? See the [Markdown primer in Claude 101](claude-101.md#markdown-files) for what they are and how to open them.*
+
 Paste the first two into Project instructions, upload the rest as Project knowledge, and your Project is structured from day one.
+
+!!! note "A note before you download"
+    Yen put this skill together. She finds it fits well for both her work and personal-life projects, but there are plenty of ways to set up a Project and no single right answer. Give it a try, and if a different structure suits how you work, feel free to adapt the files or build your own.
 
 [:octicons-download-24: Download project-setup.skill](assets/project-setup.skill){ .md-button .md-button--primary }
 
