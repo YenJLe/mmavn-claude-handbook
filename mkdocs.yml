@@ -59,5 +59,6 @@ nav:
   - Home: index.md
   - Claude 101: claude-101.md
   - Desktop App Tour: desktop-tour.md
+  - Claude Cowork: cowork.md
   - Prompting Basics: prompting.md
   - Use Cases by Role: use-cases.md

@@ -88,7 +88,9 @@ Claude remembers facts about you across conversations if you let it. It will sav
 
 ### 10. Claude Cowork (preview)
 
-The feature we will cover in the next training. Turns a local folder on your computer into a persistent AI workspace with its own instructions, decision log, and status tracker. This is how we run the MMA Vietnam project internally. More in the second session.
+The second way to work with Claude. Turns a local folder on your computer into a persistent AI workspace with its own instructions, decision log, and status tracker. Where the desktop app is a conversation, Cowork is a collaborator who lives in your files.
+
+[:octicons-arrow-right-24: Read the Claude Cowork primer](cowork.md){ .md-button }
 
 ## Markdown (.md) files: a quick primer { #markdown-files }
 

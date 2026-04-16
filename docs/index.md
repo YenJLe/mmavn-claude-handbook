@@ -37,6 +37,14 @@ Think of Claude as a thinking partner. Bring it a half-formed idea, a messy draf
 
     [:octicons-arrow-right-24: Read more](desktop-tour.md)
 
+-   :material-folder-sync-outline:{ .lg .middle } **Claude Cowork**
+
+    ---
+
+    The second way to work with Claude: a folder on your computer that Claude reads, writes, and reasons across. Chat vs Cowork, compared.
+
+    [:octicons-arrow-right-24: Read more](cowork.md)
+
 -   :material-message-text-outline:{ .lg .middle } **Prompting Basics**
 
     ---
