@@ -96,7 +96,7 @@ Paste the first two into Project instructions, upload the rest as Project knowle
 [:octicons-download-24: Download project-setup.skill](assets/project-setup.skill){ .md-button .md-button--primary }
 
 !!! note "Known quirk"
-    This skill has a minor display error during setup when used in Cowork. It works best in Claude Code (terminal). The error is cosmetic only and does not affect the generated files or their quality. Anthropic is aware of the issue.
+    This skill has a minor display error during setup when used in Cowork. It works best in Claude Code (and terminal). The error is cosmetic only and does not affect the generated files or their quality.
 
 Installation and live walkthrough are covered in the Claude Cowork training session.
 
