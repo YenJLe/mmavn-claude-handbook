@@ -38,9 +38,18 @@ All three are strong. They are not identical, and the differences matter for the
 
 ### 1. Projects
 
-A Project is a persistent workspace with its own files, instructions, and chat history. Think of it like a shared folder that Claude reads every time you open a new chat inside it. Drop in brand guidelines, templates, and past decks once, and every future conversation in that project already knows the context. This is the single biggest time-saver for recurring work.
+**This is the feature to actually use.** A Project is a persistent workspace with its own instructions and its own files. Every new chat you open inside a Project inherits both. Brief Claude once, and every future conversation in that Project already knows what event you are working on, what tone to use, and what files to draw from.
 
-> **Use case:** one project per major event (Creative Summit, INNOVATE, SMARTIES). Upload the brand deck, past copy, and sponsor list once. Future drafts take 30 seconds instead of 10 minutes of re-briefing.
+**Without a Project.** Every chat starts from zero. You re-explain who you are, what MMA Vietnam is, what Creative Summit is, what "good" sounds like. Every time. Ten minutes gone before Claude writes a word.
+
+**With a Project.** You open a new chat and say "draft the invite for banking CMOs." Claude already knows the event, the tone, the past examples, and the brand rules. It writes in the right voice on the first try.
+
+> **Use case:** one Project per major workstream (Creative Summit, INNOVATE, SMARTIES, Think Tanks). Upload the brand deck, past copy, and sponsor list once. Future drafts take 30 seconds instead of 10 minutes of re-briefing. This is the single biggest productivity gain in the app, and the feature that separates people who use Claude casually from people who get real leverage out of it.
+
+!!! tip "Skip the blank page: use the project-setup skill"
+    The hardest part of a new Project is the blank page: what do you put in Project instructions, what files belong in Project knowledge, and how do you structure them so future-you does not have to rewrite everything after the first week.
+
+    The **project-setup** skill (shared during the Claude Cowork training session) interviews you for about five minutes and generates a starter kit of five foundational files: **CLAUDE.md** (operating rules), **INITIAL_CONTEXT.md** (day-one background), **DIARY.md** (decision log), **SOUL.md** (tone and personality), and **PROJECT_STATUS.md** (a living dashboard with a workspace map). Drop these straight into Project instructions and Project knowledge. Your first Project is structured from day one, not after three rewrites.
 
 ### 2. File uploads
 

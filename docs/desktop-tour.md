@@ -37,6 +37,9 @@ A new chat has **no memory of other chats**. If you want Claude to know somethin
 
 A **Project** is a persistent workspace with its own instructions and files. Every new chat inside a project inherits both. This means you set up the context once and never re-brief Claude again for that project.
 
+!!! tip "Do not skip this section"
+    If you read nothing else on this site, read this. Projects are what turn Claude from a chat window into a real workspace. Teams that set up Projects well get hours back every week. Teams that do not set up Projects keep re-briefing Claude from scratch every time and wonder why it feels slow.
+
 ### How to create one
 
 1. Click **Projects** in the sidebar, then **Create project**.
@@ -70,6 +73,20 @@ Do **not** upload: client confidential material, unreleased financials, signed c
 ### Why this matters
 
 Every chat in a Project already knows the context. You can open a new chat and just say "draft the invite for sponsors" and Claude already knows what event, what audience, what tone. This is the single biggest productivity gain in the app.
+
+### Skip the blank page: the project-setup skill
+
+Setting up a Project from scratch is the hardest part. What goes into the instructions, what files belong in the knowledge base, how do you structure it so it still holds up three months in.
+
+The **project-setup** skill (shared during the Claude Cowork training session) runs you through a five-minute interview and produces a starter kit of five foundational files:
+
+- **CLAUDE.md** → how Claude should work in this project
+- **INITIAL_CONTEXT.md** → day-one background, who this is for, what problem it solves
+- **DIARY.md** → a running log of decisions and turning points
+- **SOUL.md** → the tone and personality you want Claude to use
+- **PROJECT_STATUS.md** → a living dashboard showing where the project is right now, plus a workspace map
+
+Paste the first two into Project instructions, upload the rest as Project knowledge, and your Project is structured from day one. You can get the skill from Yen once the Cowork training session has run.
 
 ## 5. File uploads
 
