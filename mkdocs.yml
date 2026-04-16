@@ -4,7 +4,7 @@ site_author: MMA Vietnam
 site_url: https://yenjle.github.io/mmavn-claude-handbook/
 repo_url: https://github.com/YenJLe/mmavn-claude-handbook
 repo_name: YenJLe/mmavn-claude-handbook
-copyright: Internal knowledge base. MMA Vietnam.
+copyright: Prepared by Yen, internal use only.
 
 docs_dir: docs
 
@@ -30,8 +30,14 @@ theme:
     - content.code.copy
     - toc.follow
 
+extra:
+  generator: false
+
 extra_css:
   - stylesheets/extra.css
+
+hooks:
+  - hooks/header_title.py
 
 markdown_extensions:
   - admonition

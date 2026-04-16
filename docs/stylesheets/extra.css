@@ -51,3 +51,58 @@
 [data-md-color-scheme="slate"] .md-nav__title {
   color: #FFA400;
 }
+
+/* Gold accent on the last word of the site name in the top header */
+.handbook-accent {
+  color: #FFA400;
+}
+
+/* Admonitions: force every type to use MMA Gold.
+   Overrides Material's default green (tip), blue (note), light blue
+   (abstract), etc. so highlighted message boxes stay on-brand. */
+.md-typeset .admonition,
+.md-typeset details {
+  border-color: #FFA400 !important;
+}
+
+.md-typeset .admonition-title,
+.md-typeset summary {
+  background-color: rgba(255, 164, 0, 0.12) !important;
+}
+
+.md-typeset .admonition-title::before,
+.md-typeset summary::before {
+  background-color: #FFA400 !important;
+}
+
+/* Buttons: MMA Gold by default, invert to Onyx on hover.
+   Covers both .md-button and .md-button--primary with the same look. */
+.md-typeset .md-button,
+.md-typeset .md-button--primary {
+  background-color: #FFA400 !important;
+  color: #000000 !important;
+  border: 2px solid #FFA400 !important;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.md-typeset .md-button:hover,
+.md-typeset .md-button:focus,
+.md-typeset .md-button--primary:hover,
+.md-typeset .md-button--primary:focus {
+  background-color: #000000 !important;
+  color: #FFA400 !important;
+  border-color: #000000 !important;
+}
+
+/* Top nav tabs: white by default, MMA Gold on hover and when active */
+.md-tabs__link {
+  color: #FFFFFF !important;
+  opacity: 1 !important;
+}
+
+.md-tabs__link:hover,
+.md-tabs__link:focus,
+.md-tabs__link--active,
+.md-tabs__item--active .md-tabs__link {
+  color: #FFA400 !important;
+}
