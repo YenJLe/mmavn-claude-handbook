@@ -7,22 +7,14 @@ hide:
 
 *The team's guide to using Claude for everyday work.*
 
-This site is the working knowledge base for Claude, the AI assistant we use across MMA Vietnam. It covers how to access it, how to use it well, and how it fits into real MMA work. Expect it to grow. Every question that comes up in training or in chat lands here so the next person can find the answer.
+This site is the working knowledge base for Claude, the AI assistant we use across MMA Vietnam. It covers what Claude is, how to use it well, and how it fits into real MMA work. Expect it to grow. Every question that comes up in training or in chat lands here so the next person can find the answer.
 
 !!! tip "New to Claude?"
-    Start with **Claude 101** to understand what Claude is and what it does. Then follow **Getting Access** to install the desktop app. Skim **Use Cases by Role** for examples relevant to your work.
+    Start with **Claude 101** to understand what Claude is and what it does. Then read the **Desktop App Tour** and **Prompting Basics**. Skim **Use Cases by Role** for examples relevant to your work.
 
 ## Handbook Sections
 
 <div class="grid cards" markdown>
-
--   :material-key-variant:{ .lg .middle } **Getting Access**
-
-    ---
-
-    Install the desktop app, log in, and run your first prompt.
-
-    [:octicons-arrow-right-24: Read more](getting-access.md)
 
 -   :material-book-open-variant:{ .lg .middle } **Claude 101**
 
@@ -64,13 +56,16 @@ This site is the working knowledge base for Claude, the AI assistant we use acro
 
     [:octicons-arrow-right-24: Read more](faq.md)
 
+-   :material-history:{ .lg .middle } **Changelog**
+
+    ---
+
+    What is new in Claude, in MMA's use of it, and in this handbook.
+
+    [:octicons-arrow-right-24: Read more](changelog.md)
+
 </div>
-
-## Need help?
-
-Post in the #claude-help channel in Teams, or message the site owner. If your question is not already in the FAQ, it will be added after we answer it.
 
 ---
 
-**Site owner:** [Name]
 **Last reviewed:** April 2026

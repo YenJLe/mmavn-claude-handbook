@@ -99,6 +99,6 @@ Give Claude context. The difference between a weak output and a strong one is al
 
 ---
 
-**Next step:** [Getting Access](getting-access.md) → install the desktop app and try your first prompt with a real MMA file.
+**Next step:** [Desktop App Tour](desktop-tour.md) → see where everything lives in the app, then read [Prompting Basics](prompting.md) to get more out of each chat.
 
 **Last reviewed:** April 2026
