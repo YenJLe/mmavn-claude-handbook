@@ -20,21 +20,19 @@ All three are strong. They are not identical, and the differences matter for the
 
 ### Where ChatGPT is stronger
 
-- **Image generation.** DALL-E is built in and produces solid results with minimal prompting.
 - **Ecosystem maturity.** The Custom GPTs marketplace is large, with pre-built assistants for almost any niche task.
 - **Voice mode.** More conversational and expressive than Claude's or Gemini's.
-- **Video understanding.** Can analyse video frames, which Claude cannot.
 
 ### Where Gemini is stronger
 
-- **Google Workspace integration.** Native in Gmail, Docs, Sheets, Slides, and Drive. If your day lives inside Google, Gemini is already sitting next to your work.
+- **Image and video generation.** Native in the app and consistently better than ChatGPT's DALL-E or Sora for the kind of visuals and short clips we actually use.
+- **Video and audio analysis.** Handles full video files and long audio natively, which neither Claude nor ChatGPT match.
 - **Real-time information.** Uses Google Search under the hood, so it is stronger on breaking news, live data, and anything time-sensitive.
-- **Video and audio understanding.** Handles full video files and long audio natively, which neither Claude nor ChatGPT match.
 - **Very long context.** Gemini Pro handles up to 2 million tokens, the largest of the three, useful for dumping a full library of reports into one chat.
 - **Free tier.** More generous than the others, which matters for teams trialling AI without a paid plan.
 
 !!! abstract "Our take for MMA"
-    Claude is the better default for writing, analysis, and brand-voice work, which is most of what we do. Use ChatGPT when you need image generation or a specific custom GPT. Use Gemini when your work lives inside Google Workspace or you need video analysis. Most of the team will settle on Claude for 80% of tasks and reach for the others only when a specific feature is needed.
+    Claude is the better default for writing, analysis, and brand-voice work, which is most of what we do. Reach for ChatGPT when you need a pre-built custom GPT for a niche task. Reach for Gemini when you need to generate images or video, or analyse a long video or audio file.
 
 ## Features that actually matter for MMA work
 
