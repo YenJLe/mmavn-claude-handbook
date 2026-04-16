@@ -1,4 +1,4 @@
-# MMA Claude Handbook
+# MMA Vietnam Claude Handbook
 
 Static documentation site built with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/).
 

@@ -3,7 +3,7 @@ hide:
   - navigation
 ---
 
-# MMA Claude Handbook
+# MMA Vietnam Claude Handbook
 
 *The team's guide to using Claude for everyday work.*
 

@@ -2,6 +2,9 @@
 
 *The handful of prompting habits that actually change the quality of what Claude gives you back. Each tip has a weak example and a strong example so you can see the difference.*
 
+!!! abstract "Why context is the whole game"
+    Claude's strongest capability is context engineering: understanding a brief, holding it across a long conversation, and producing work that fits. That strength is dormant until you feed it. Every tip on this page is, at heart, a different way of giving Claude better context. A one-line ask gets a one-line generic answer. A full brief gets work that fits on the first try.
+
 There is no special prompting language. You are just briefing a smart colleague who does not know your project. The habits below are what that brief looks like when done well.
 
 ## 1. Give context before you ask

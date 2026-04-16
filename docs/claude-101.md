@@ -88,7 +88,9 @@ The feature we will cover in the next training. Turns a local folder on your com
 
 ## The one rule that changes everything
 
-Give Claude context. The difference between a weak output and a strong one is almost always how much context you provided. Paste the brand guidelines. Upload the brief. Share the example you liked. Tell it who the audience is. Claude responds to what you feed it. Garbage in, polite garbage out.
+Claude's core strength is context. It was built to hold long briefs in its head, draw on the files you attach, and keep tone and constraints consistent across a full document. That strength only shows up when you feed it context. Paste the brand guidelines. Upload the brief. Share the example you liked. Tell it who the audience is, what has been tried, and what "good" looks like.
+
+The difference between a weak output and a strong one is almost always how much context you provided. A one-line ask gets a one-line generic answer. A full brief gets work that fits. Claude responds to what you feed it. Garbage in, polite garbage out.
 
 ## Your responsibilities
 
