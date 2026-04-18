@@ -49,10 +49,12 @@ mmavn-claude-handbook/
   docs/
     index.md              # Home
     claude-101.md         # What Claude is + comparisons + features
-    getting-access.md     # Install and login
+    skills.md             # MMA skills installed in the workspace
     desktop-tour.md       # App walkthrough
+    projects.md           # Persistent workspaces, project-setup scaffold
+    cowork.md             # Folder-based collaboration
+    claude-in-office.md   # PowerPoint and Excel add-ins
     prompting.md          # Prompting basics
-    use-cases.md          # Role-specific examples
     assets/               # Logos, favicons, screenshots
     stylesheets/
       extra.css           # MMA brand styling

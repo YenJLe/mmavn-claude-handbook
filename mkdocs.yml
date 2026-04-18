@@ -58,7 +58,9 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Claude 101: claude-101.md
+  - MMA Skills: skills.md
   - Desktop App Tour: desktop-tour.md
+  - Projects: projects.md
   - Claude Cowork: cowork.md
+  - Claude in Office: claude-in-office.md
   - Prompting Basics: prompting.md
-  - Use Cases by Role: use-cases.md

@@ -33,72 +33,11 @@ Type your prompt. Press Enter to send, or Shift + Enter for a line break.
 
 A new chat has **no memory of other chats**. If you want Claude to know something from a previous conversation, you have to tell it or paste it in. This is why Projects exist (next section).
 
-## 4. Projects: the single biggest time-saver { #projects }
+## 4. Projects { #projects }
 
-A **Project** is a persistent workspace with its own instructions and files. Every new chat inside a project inherits both. This means you set up the context once and never re-brief Claude again for that project.
+Projects are the single biggest productivity gain in the app. There is enough to cover that they live on their own page.
 
-!!! tip "Do not skip this section"
-    If you read nothing else on this site, read this. Projects are what turn Claude from a chat window into a real workspace. Teams that set up Projects well get hours back every week. Teams that do not set up Projects keep re-briefing Claude from scratch every time and wonder why it feels slow.
-
-### How to create one
-
-1. Click **Projects** in the sidebar, then **Create project**.
-2. Name it (e.g., "Creative Summit 2026").
-3. Add a description (optional but useful).
-4. Set **Project instructions.** This is free text Claude will read at the start of every chat in this project. Tell it who you are, what the project is, what tone to use, what it should avoid.
-5. Upload **Project knowledge** (optional). Drop in the brand guidelines, past decks, past emails, the brief. These files are available in every chat in this project.
-
-### What to put in Project instructions
-
-Keep it short and high-signal. A good template:
-
-```
-I am the marketing lead at MMA Vietnam. This project is for [event/workstream].
-Key context: [3-5 bullet points].
-Style: no em dashes, direct and CTA-driven, bold but not salesy. Use "MMA" not "mma.".
-When I ask for drafts, give me one version unless I ask for options.
-```
-
-### What to put in Project knowledge
-
-Files you keep referring to:
-
-- MMA Brand Guidelines (draft 4 or whatever is current)
-- Past event decks and emails you want Claude to match in tone
-- The current brief or strategy deck
-- Style examples (a LinkedIn post you liked, an email you wrote well)
-
-Do **not** upload: client confidential material, unreleased financials, signed contracts, or anything you would not paste into a group chat.
-
-### Why this matters
-
-Every chat in a Project already knows the context. You can open a new chat and just say "draft the invite for sponsors" and Claude already knows what event, what audience, what tone. This is the single biggest productivity gain in the app.
-
-### Skip the blank page: the project-setup skill
-
-Setting up a Project from scratch is the hardest part. What goes into the instructions, what files belong in the knowledge base, how do you structure it so it still holds up three months in.
-
-The **project-setup** skill runs you through a five-minute interview and produces a starter kit of five foundational files:
-
-- **CLAUDE.md** → how Claude should work in this project
-- **INITIAL_CONTEXT.md** → day-one background, who this is for, what problem it solves
-- **DIARY.md** → a running log of decisions and turning points
-- **SOUL.md** → the tone and personality you want Claude to use
-- **PROJECT_STATUS.md** → a living dashboard showing where the project is right now, plus a workspace map
-
-*New to `.md` files? See the [Markdown primer in Claude 101](claude-101.md#markdown-files) for what they are and how to open them.*
-
-Paste the first two into Project instructions, upload the rest as Project knowledge, and your Project is structured from day one.
-
-!!! note "A note before you download"
-    Yen put this skill together. She finds it fits well for both her work and personal-life projects, but there are plenty of ways to set up a Project and no single right answer. Give it a try, and if a different structure suits how you work, feel free to adapt the files or build your own.
-
-[:octicons-download-24: Download project-setup.skill](assets/project-setup.skill){ .md-button .md-button--primary }
-
-!!! note "Known quirk"
-    This skill has a minor display error during setup when used in Cowork. It works best in Claude Code (and terminal). The error is cosmetic only and does not affect the generated files or their quality.
-
-Installation and live walkthrough are covered in the Claude Cowork training session.
+[:octicons-arrow-right-24: Go to Projects](projects.md){ .md-button .md-button--primary }
 
 ## 5. File uploads
 

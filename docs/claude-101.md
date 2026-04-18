@@ -46,7 +46,7 @@ All three are strong. They are not identical, and the differences matter for the
 
 > **Use case:** one Project per major workstream (Creative Summit, INNOVATE, SMARTIES, Think Tanks). Upload the brand deck, past copy, and sponsor list once. Future drafts take 30 seconds instead of 10 minutes of re-briefing. This is the single biggest productivity gain in the app, and the feature that separates people who use Claude casually from people who get real leverage out of it.
 
-[:octicons-arrow-right-24: How to set up a Project](desktop-tour.md#projects){ .md-button .md-button--primary }
+[:octicons-arrow-right-24: How to set up a Project](projects.md){ .md-button .md-button--primary }
 
 ### 2. File uploads
 
@@ -73,6 +73,10 @@ Claude can connect directly to Gmail, Google Calendar, Microsoft 365 (Outlook, S
 Skills are reusable capabilities you install once and call anytime. Think of them as saved workflows. There are pre-built skills for creating slide decks, editing Word docs, building spreadsheets, designing posters, and more. When a skill is relevant, Claude uses it automatically.
 
 > **Use case:** ask for a slide deck and Claude pulls in the slide-deck skill, producing a proper .pptx instead of a text outline.
+
+MMA has its own set of skills pre-loaded in the workspace: org context, brand voice, press releases, case studies, member comms, and more. They fire automatically when you ask.
+
+[:octicons-arrow-right-24: See the MMA Skills list](skills.md){ .md-button }
 
 ### 7. Web search
 
