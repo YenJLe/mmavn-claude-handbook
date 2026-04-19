@@ -2,8 +2,6 @@ site_name: MMA Vietnam Claude Handbook
 site_description: The MMA team's guide to using Claude for everyday work.
 site_author: MMA Vietnam
 site_url: https://yenjle.github.io/mmavn-claude-handbook/
-repo_url: https://github.com/YenJLe/mmavn-claude-handbook
-repo_name: YenJLe/mmavn-claude-handbook
 copyright: Prepared by Yen, internal use only.
 
 docs_dir: docs
