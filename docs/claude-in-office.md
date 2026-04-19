@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 # Claude in Office
 
 *Claude lives inside PowerPoint and Excel. Click the Claude icon in your toolbar to open it alongside your file. Already deployed org-wide.*

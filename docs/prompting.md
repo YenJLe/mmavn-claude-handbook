@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 # Prompting Basics
 
 *The handful of prompting habits that actually change the quality of what Claude gives you back. Each tip has a weak example and a strong example so you can see the difference.*

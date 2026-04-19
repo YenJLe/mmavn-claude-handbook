@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 # Projects
 
 *A Project is a persistent workspace with its own instructions and files. Set it up once, skip the re-briefing forever.*

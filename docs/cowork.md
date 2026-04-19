@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 # Claude Cowork
 
 *Cowork is the second way to work with Claude. Where the desktop app is a chat window, Cowork is a folder on your computer that Claude reads, writes to, and reasons across.*

@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 # Desktop App Tour
 
 *A walkthrough of the Claude desktop app: where everything lives, what each feature does, and how the pieces fit together.*

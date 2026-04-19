@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 # Claude 101
 
 *What Claude is, how it compares to ChatGPT and Gemini, and which features actually matter for MMA work.*

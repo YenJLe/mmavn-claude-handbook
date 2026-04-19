@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 # MMA Skills
 
 *Skills are the "already done for you" layer of Claude. Pre-loaded knowledge and workflows tailored to MMA and to the work we do, firing automatically when relevant.*
