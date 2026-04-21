@@ -105,7 +105,7 @@ body,
   line-height: 1.1;
   margin-bottom: 1.5rem;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .md-typeset h1::before {
@@ -126,7 +126,7 @@ body,
   font-size: 1.5rem;
   margin-top: 2.5rem;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .md-typeset h2::before {
@@ -186,7 +186,7 @@ body,
 
 .mma-featured .mma-featured__title {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.35em;
   font-size: 1.5rem;
   font-weight: 700;
@@ -527,6 +527,41 @@ body,
 ::selection {
   background-color: rgba(255, 164, 0, 0.3);
   color: inherit;
+}
+
+/* ---------- Homepage page-load cascade ----------
+   Fires once when the homepage loads (or on instant-nav back to home).
+   Fades + rises the featured block, tier labels, and cards in sequence.
+   Respects prefers-reduced-motion. */
+@keyframes mma-rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .mma-featured,
+  .mma-tier-label,
+  .md-typeset .grid.cards > ul > li {
+    animation: mma-rise 520ms cubic-bezier(0.22, 1, 0.36, 1) backwards;
+  }
+
+  .mma-featured { animation-delay: 80ms; }
+
+  .mma-tier-label:nth-of-type(1) { animation-delay: 220ms; }
+  .md-typeset .grid.cards:nth-of-type(1) > ul > li:nth-child(1) { animation-delay: 280ms; }
+  .md-typeset .grid.cards:nth-of-type(1) > ul > li:nth-child(2) { animation-delay: 340ms; }
+  .md-typeset .grid.cards:nth-of-type(1) > ul > li:nth-child(3) { animation-delay: 400ms; }
+
+  .mma-tier-label:nth-of-type(2) { animation-delay: 500ms; }
+  .md-typeset .grid.cards:nth-of-type(2) > ul > li:nth-child(1) { animation-delay: 560ms; }
+  .md-typeset .grid.cards:nth-of-type(2) > ul > li:nth-child(2) { animation-delay: 620ms; }
+  .md-typeset .grid.cards:nth-of-type(2) > ul > li:nth-child(3) { animation-delay: 680ms; }
 }
 
 /* ---------- Mobile overrides ----------
