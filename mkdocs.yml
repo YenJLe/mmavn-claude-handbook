@@ -11,12 +11,21 @@ theme:
   logo: assets/mma-logo.svg
   favicon: assets/favicon.png
   palette:
-    scheme: default
-    primary: black
-    accent: amber
-  font:
-    text: Inter
-    code: JetBrains Mono
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font: false
   features:
     - navigation.tabs
     - navigation.sections

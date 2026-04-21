@@ -1,7 +1,13 @@
-/* MMA brand colour overrides.
-   Primary: Onyx #000000
-   Accent:  MMA Gold #FFA400
-*/
+/* MMA Vietnam Claude Handbook — Impeccable redesign pass
+   Brand: Onyx #000000, MMA Gold #FFA400
+   Fonts: Satoshi (body/headings), Gambetta (serif display), Geist Mono (code)
+   Motif: brand-asset diagonal slash (diagonal-gold.png / diagonal-white.png)
+
+   Strict palette — no blue, no purple, no pink, no teal.
+   Every Material default that ships blue has been overridden below. */
+
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700&f[]=gambetta@400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;700&display=swap');
 
 :root > * {
   --md-primary-fg-color: #000000;
@@ -9,6 +15,35 @@
   --md-primary-fg-color--dark: #000000;
   --md-accent-fg-color: #FFA400;
   --md-accent-fg-color--transparent: rgba(255, 164, 0, 0.12);
+
+  --md-typeset-a-color: #FFA400;
+
+  --md-text-font: "Satoshi", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --md-code-font: "Geist Mono", "JetBrains Mono", ui-monospace, monospace;
+  --mma-serif: "Gambetta", "Tiempos Text", Georgia, serif;
+
+  --mma-gold: #FFA400;
+  --mma-gold-deep: #cc7f00;
+  --mma-gold-soft: rgba(255, 164, 0, 0.12);
+  --mma-onyx: #000000;
+  --mma-charcoal: #1a1a1a;
+  --mma-gray: #6b6b6b;
+  --mma-warn: #D97A00;
+  --mma-error: #C63A28;
+
+  /* Code highlight palette — zero blue. */
+  --md-code-hl-keyword-color: #1a1a1a;
+  --md-code-hl-name-color: #1a1a1a;
+  --md-code-hl-function-color: #cc7f00;
+  --md-code-hl-constant-color: #D97A00;
+  --md-code-hl-number-color: #D97A00;
+  --md-code-hl-string-color: #cc7f00;
+  --md-code-hl-operator-color: #6b6b6b;
+  --md-code-hl-punctuation-color: #6b6b6b;
+  --md-code-hl-comment-color: #8a8a8a;
+  --md-code-hl-generic-color: #1a1a1a;
+  --md-code-hl-variable-color: #1a1a1a;
+  --md-code-hl-special-color: #FFA400;
 }
 
 [data-md-color-scheme="slate"] {
@@ -16,33 +51,216 @@
   --md-primary-bg-color: #0a0a0a;
   --md-accent-fg-color: #FFA400;
   --md-accent-fg-color--transparent: rgba(255, 164, 0, 0.18);
+  --md-typeset-a-color: #FFA400;
+
+  --md-code-hl-keyword-color: #f4f4f4;
+  --md-code-hl-name-color: #f4f4f4;
+  --md-code-hl-function-color: #FFA400;
+  --md-code-hl-constant-color: #FFB833;
+  --md-code-hl-number-color: #FFB833;
+  --md-code-hl-string-color: #FFA400;
+  --md-code-hl-operator-color: #9a9a9a;
+  --md-code-hl-punctuation-color: #9a9a9a;
+  --md-code-hl-comment-color: #7a7a7a;
+  --md-code-hl-generic-color: #e4e4e4;
+  --md-code-hl-variable-color: #e4e4e4;
+  --md-code-hl-special-color: #FFA400;
 }
 
-/* Header stays black in both modes */
+body,
+.md-typeset {
+  font-family: var(--md-text-font);
+  font-weight: 400;
+  letter-spacing: -0.005em;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4 {
+  font-family: var(--md-text-font);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
 .md-header {
   background-color: #000000;
 }
 
-/* Diagonal slash accent under H1, a subtle nod to MMA's signature motif. */
+.md-header,
+.md-header__title,
+.md-header__topic,
+.md-header .md-ellipsis {
+  color: #FFFFFF;
+}
+
+/* ---------- Signature motif: MMA brand-asset diagonal slash ----------
+   Uses the sharp parallelogram diagonal from MMA Branding/Dianogal. */
 .md-typeset h1 {
-  border-left: 4px solid #FFA400;
-  padding-left: 0.75rem;
+  position: relative;
+  border-left: none;
+  padding-left: 0;
+  font-size: clamp(2rem, 1.4rem + 2vw, 2.75rem);
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
 }
 
-/* Accent underline on in-text links */
+.md-typeset h1::before {
+  content: "";
+  flex: 0 0 auto;
+  display: inline-block;
+  width: 0.75em;
+  height: 1.1em;
+  margin-left: -0.95em;
+  margin-right: 0.2em;
+  background-image: url('../assets/diagonal-gold.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.md-typeset h2 {
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.md-typeset h2::before {
+  content: "";
+  flex: 0 0 auto;
+  display: inline-block;
+  width: 0.75em;
+  height: 1.1em;
+  margin-left: -0.95em;
+  margin-right: 0.2em;
+  background-image: url('../assets/diagonal-gold.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.9;
+}
+
+/* ---------- Links ---------- */
 .md-typeset a {
-  text-decoration-color: rgba(255, 164, 0, 0.4);
+  color: var(--mma-gold);
+  text-decoration-color: rgba(255, 164, 0, 0.5);
+  text-underline-offset: 0.2em;
 }
 
-/* Grid card hover in MMA gold */
+.md-typeset a:hover {
+  text-decoration-color: #FFA400;
+}
+
+/* ---------- Homepage featured block ----------
+   Eyebrow, title, body, CTA all share the same left edge.
+   Slash sits inline immediately before the title word. */
+.mma-featured {
+  display: block;
+  position: relative;
+  background: #000000;
+  color: #FFFFFF;
+  padding: 2rem 3rem;
+  margin: 1.5rem 0 2rem;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.mma-featured:hover {
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+.mma-featured .mma-featured__eyebrow {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #FFA400;
+  margin-bottom: 0.4rem;
+}
+
+.mma-featured .mma-featured__title {
+  display: flex;
+  align-items: center;
+  gap: 0.35em;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.mma-featured .mma-featured__title::before {
+  content: "";
+  flex: 0 0 auto;
+  display: inline-block;
+  width: 1.3rem;
+  height: 1.8rem;
+  margin-left: -1.65rem;
+  background-image: url('../assets/diagonal-gold.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.mma-featured .mma-featured__body {
+  display: block;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.92rem;
+  line-height: 1.5;
+  max-width: 60ch;
+}
+
+.mma-featured .mma-featured__cta {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  color: #FFA400;
+  background-color: transparent;
+  border: 2px solid #FFA400;
+  font-weight: 500;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.mma-featured:hover .mma-featured__cta {
+  background-color: #FFA400;
+  color: #000000;
+}
+
+/* Section tier label */
+.mma-tier-label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.55);
+  margin: 2rem 0 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+[data-md-color-scheme="slate"] .mma-tier-label {
+  color: rgba(255, 255, 255, 0.55);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Grid cards hover */
 .md-typeset .grid.cards > ol > li:hover,
 .md-typeset .grid.cards > ul > li:hover,
 .md-typeset .grid.cards > :is(ul, ol) > li:hover {
   border-color: #FFA400;
-  box-shadow: 0 0 0 1px #FFA400;
+  box-shadow: 0 2px 12px rgba(255, 164, 0, 0.15);
 }
 
-/* Section headers in the nav sidebar */
+/* Sidebar nav titles */
 .md-nav__title {
   color: #000000;
   font-weight: 600;
@@ -52,36 +270,226 @@
   color: #FFA400;
 }
 
-/* Gold accent on the last word of the site name in the top header */
 .handbook-accent {
   color: #FFA400;
 }
 
-/* Admonitions: force every type to use MMA Gold.
-   Overrides Material's default green (tip), blue (note), light blue
-   (abstract), etc. so highlighted message boxes stay on-brand. */
+/* ---------- Admonitions — blue-free palette ----------
+   Material's defaults include blue (note, abstract, info), teal (tip),
+   purple (example), pink (bug). All overridden below.
+
+   Palette map:
+     Gold (brand CTA):   tip, important, info, abstract, summary, hint, todo
+     Onyx (neutral):     note, example, quote, cite, question, help, faq
+     Warm amber (warn):  warning, caution, attention
+     Warm red (error):   danger, error, failure, fail, missing, bug
+     Deep gold (done):   success, check, done
+*/
+
 .md-typeset .admonition,
 .md-typeset details {
-  border-color: #FFA400 !important;
+  border-color: var(--mma-gold);
 }
 
 .md-typeset .admonition-title,
 .md-typeset summary {
-  background-color: rgba(255, 164, 0, 0.12) !important;
+  background-color: var(--mma-gold-soft);
 }
 
 .md-typeset .admonition-title::before,
 .md-typeset summary::before {
-  background-color: #FFA400 !important;
+  background-color: var(--mma-gold);
 }
 
-/* Buttons: MMA Gold by default, invert to Onyx on hover.
-   Covers both .md-button and .md-button--primary with the same look. */
+/* Onyx/neutral types */
+.md-typeset .admonition.note,
+.md-typeset details.note,
+.md-typeset .admonition.example,
+.md-typeset details.example,
+.md-typeset .admonition.quote,
+.md-typeset details.quote,
+.md-typeset .admonition.cite,
+.md-typeset details.cite,
+.md-typeset .admonition.question,
+.md-typeset details.question,
+.md-typeset .admonition.help,
+.md-typeset details.help,
+.md-typeset .admonition.faq,
+.md-typeset details.faq {
+  border-color: var(--mma-charcoal);
+}
+
+.md-typeset .note > .admonition-title,
+.md-typeset .note > summary,
+.md-typeset .example > .admonition-title,
+.md-typeset .example > summary,
+.md-typeset .quote > .admonition-title,
+.md-typeset .quote > summary,
+.md-typeset .cite > .admonition-title,
+.md-typeset .cite > summary,
+.md-typeset .question > .admonition-title,
+.md-typeset .question > summary,
+.md-typeset .help > .admonition-title,
+.md-typeset .help > summary,
+.md-typeset .faq > .admonition-title,
+.md-typeset .faq > summary {
+  background-color: rgba(26, 26, 26, 0.06);
+}
+
+.md-typeset .note > .admonition-title::before,
+.md-typeset .note > summary::before,
+.md-typeset .example > .admonition-title::before,
+.md-typeset .example > summary::before,
+.md-typeset .quote > .admonition-title::before,
+.md-typeset .quote > summary::before,
+.md-typeset .cite > .admonition-title::before,
+.md-typeset .cite > summary::before,
+.md-typeset .question > .admonition-title::before,
+.md-typeset .question > summary::before,
+.md-typeset .help > .admonition-title::before,
+.md-typeset .help > summary::before,
+.md-typeset .faq > .admonition-title::before,
+.md-typeset .faq > summary::before {
+  background-color: var(--mma-charcoal);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .note,
+[data-md-color-scheme="slate"] .md-typeset .example,
+[data-md-color-scheme="slate"] .md-typeset .quote,
+[data-md-color-scheme="slate"] .md-typeset .cite,
+[data-md-color-scheme="slate"] .md-typeset .question,
+[data-md-color-scheme="slate"] .md-typeset .help,
+[data-md-color-scheme="slate"] .md-typeset .faq {
+  border-color: #f4f4f4;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .note > .admonition-title::before,
+[data-md-color-scheme="slate"] .md-typeset .note > summary::before,
+[data-md-color-scheme="slate"] .md-typeset .example > .admonition-title::before,
+[data-md-color-scheme="slate"] .md-typeset .example > summary::before,
+[data-md-color-scheme="slate"] .md-typeset .quote > .admonition-title::before,
+[data-md-color-scheme="slate"] .md-typeset .quote > summary::before,
+[data-md-color-scheme="slate"] .md-typeset .cite > .admonition-title::before,
+[data-md-color-scheme="slate"] .md-typeset .cite > summary::before,
+[data-md-color-scheme="slate"] .md-typeset .question > .admonition-title::before,
+[data-md-color-scheme="slate"] .md-typeset .question > summary::before,
+[data-md-color-scheme="slate"] .md-typeset .help > .admonition-title::before,
+[data-md-color-scheme="slate"] .md-typeset .help > summary::before,
+[data-md-color-scheme="slate"] .md-typeset .faq > .admonition-title::before,
+[data-md-color-scheme="slate"] .md-typeset .faq > summary::before {
+  background-color: #f4f4f4;
+}
+
+/* Warn */
+.md-typeset .admonition.warning,
+.md-typeset details.warning,
+.md-typeset .admonition.caution,
+.md-typeset details.caution,
+.md-typeset .admonition.attention,
+.md-typeset details.attention {
+  border-color: var(--mma-warn);
+}
+
+.md-typeset .warning > .admonition-title,
+.md-typeset .warning > summary,
+.md-typeset .caution > .admonition-title,
+.md-typeset .caution > summary,
+.md-typeset .attention > .admonition-title,
+.md-typeset .attention > summary {
+  background-color: rgba(217, 122, 0, 0.1);
+}
+
+.md-typeset .warning > .admonition-title::before,
+.md-typeset .warning > summary::before,
+.md-typeset .caution > .admonition-title::before,
+.md-typeset .caution > summary::before,
+.md-typeset .attention > .admonition-title::before,
+.md-typeset .attention > summary::before {
+  background-color: var(--mma-warn);
+}
+
+/* Error */
+.md-typeset .admonition.danger,
+.md-typeset details.danger,
+.md-typeset .admonition.error,
+.md-typeset details.error,
+.md-typeset .admonition.failure,
+.md-typeset details.failure,
+.md-typeset .admonition.fail,
+.md-typeset details.fail,
+.md-typeset .admonition.missing,
+.md-typeset details.missing,
+.md-typeset .admonition.bug,
+.md-typeset details.bug {
+  border-color: var(--mma-error);
+}
+
+.md-typeset .danger > .admonition-title,
+.md-typeset .danger > summary,
+.md-typeset .error > .admonition-title,
+.md-typeset .error > summary,
+.md-typeset .failure > .admonition-title,
+.md-typeset .failure > summary,
+.md-typeset .fail > .admonition-title,
+.md-typeset .fail > summary,
+.md-typeset .missing > .admonition-title,
+.md-typeset .missing > summary,
+.md-typeset .bug > .admonition-title,
+.md-typeset .bug > summary {
+  background-color: rgba(198, 58, 40, 0.1);
+}
+
+.md-typeset .danger > .admonition-title::before,
+.md-typeset .danger > summary::before,
+.md-typeset .error > .admonition-title::before,
+.md-typeset .error > summary::before,
+.md-typeset .failure > .admonition-title::before,
+.md-typeset .failure > summary::before,
+.md-typeset .fail > .admonition-title::before,
+.md-typeset .fail > summary::before,
+.md-typeset .missing > .admonition-title::before,
+.md-typeset .missing > summary::before,
+.md-typeset .bug > .admonition-title::before,
+.md-typeset .bug > summary::before {
+  background-color: var(--mma-error);
+}
+
+/* Success */
+.md-typeset .admonition.success,
+.md-typeset details.success,
+.md-typeset .admonition.check,
+.md-typeset details.check,
+.md-typeset .admonition.done,
+.md-typeset details.done {
+  border-color: var(--mma-gold-deep);
+}
+
+.md-typeset .success > .admonition-title,
+.md-typeset .success > summary,
+.md-typeset .check > .admonition-title,
+.md-typeset .check > summary,
+.md-typeset .done > .admonition-title,
+.md-typeset .done > summary {
+  background-color: rgba(204, 127, 0, 0.1);
+}
+
+.md-typeset .success > .admonition-title::before,
+.md-typeset .success > summary::before,
+.md-typeset .check > .admonition-title::before,
+.md-typeset .check > summary::before,
+.md-typeset .done > .admonition-title::before,
+.md-typeset .done > summary::before {
+  background-color: var(--mma-gold-deep);
+}
+
+/* ---------- Buttons ---------- */
 .md-typeset .md-button,
 .md-typeset .md-button--primary {
-  background-color: #FFA400 !important;
-  color: #000000 !important;
-  border: 2px solid #FFA400 !important;
+  background-color: #FFA400;
+  color: #000000;
+  border: 2px solid #FFA400;
+  font-weight: 500;
+  letter-spacing: 0.01em;
   transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
 }
 
@@ -89,20 +497,54 @@
 .md-typeset .md-button:focus,
 .md-typeset .md-button--primary:hover,
 .md-typeset .md-button--primary:focus {
-  background-color: #000000 !important;
-  color: #FFA400 !important;
-  border-color: #000000 !important;
+  background-color: #000000;
+  color: #FFA400;
+  border-color: #000000;
 }
 
-/* Top nav tabs: white by default, MMA Gold on hover and when active */
+/* ---------- Top nav tabs ---------- */
 .md-tabs__link {
-  color: #FFFFFF !important;
-  opacity: 1 !important;
+  color: #FFFFFF;
+  opacity: 1;
+  font-weight: 400;
 }
 
 .md-tabs__link:hover,
 .md-tabs__link:focus,
 .md-tabs__link--active,
 .md-tabs__item--active .md-tabs__link {
-  color: #FFA400 !important;
+  color: #FFA400;
+}
+
+/* ---------- Text selection (blue-free) ---------- */
+::selection {
+  background-color: rgba(255, 164, 0, 0.3);
+  color: inherit;
+}
+
+/* ---------- Back to top button ----------
+   Onyx pill with gold arrow. Present but not loud. */
+.md-top {
+  background-color: #000000;
+  color: #FFFFFF;
+  border: none;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
+  transition: background-color 0.15s ease, color 0.15s ease, transform 0.15s ease;
+}
+
+.md-top:hover,
+.md-top:focus {
+  background-color: #FFA400;
+  color: #000000;
+  transform: translateY(-2px);
+}
+
+.md-top svg {
+  fill: #FFA400;
+  transition: fill 0.15s ease;
+}
+
+.md-top:hover svg,
+.md-top:focus svg {
+  fill: #000000;
 }
